@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Modificando elementos </title>
+</head>
+
+<body>
+    
+    <p id="p" meuAtt="Meu nome">
+
+       Conteúdo do paragrafo
+
+       <span style="display: none;">para teste</span>
+       
+    </p>
+
+    <script>
+
+        //Acessando os valores do elemento do html que tem um id 'p'
+        let p = document. getElementById('p')
+
+        // Nesse ponto 'p' é uma variável que tem todo o elemento do html 
+        //p = <p id="p"> Conteúdo do paragrafo </p>
+
+      
+
+         /*
+            Modificando o elemento 'p', existe 3 formas de fazer isso 
+       
+                1 - innerHTML
+                    O innerHTML ele vai modificar o conteúdo do elemento da página, pode inserir um elemento HTML na página
+                    
+                        p.innerHTML = 'Conteúdo do paragrafo adicionado com o método de <strong> innerHTML </strong>'
+                            Assim o texto dentro da tag strong vai ficar em negrito
+                    
+                        p.textContent = 'Conteúdo do paragrafo adicionado com o método de <strong> innerHTML </strong>'
+                        p.innerText = 'Conteúdo do paragrafo adicionado com o método de <strong> innerHTML </strong>'
+
+                        Dessa forma os resultados vai ser os mesmo, o texto na tela vai ser mostrado da mesma forma que esta colocado aqui em cima.
+                ===================================================================================================================================================
+
+                2 - textContent
+                    O textContent todo o elemento dentro da variável 'p', mesmo que esse elemento não vai ser mostrado no tela para usuário 
+
+                    p.textContent
+                        '\n\n       Conteúdo do paragrafo\n\n       para teste\n       \n    '
+                ======================================================================================================================================================
+
+                3 - innerText
+                    innerText vai mostra somente os elemento que esta sendo mostrado na tela para usuário
+
+                    p.innerText
+                        'Conteúdo do paragrafo'
+        */
+
+        
+
+        /*
+            Recebendo, Modificando, e Adicionando Atributos no elemento
+
+            Para se modificar um atributo de um elemento do html o mesmo deve ser conhecido pelo html, deve ser um atributo clássico, por exemplo, style, classNme e muito outro do html
+
+        
+        
+        
+        */
+
+    </script>
+</body>
+</html>
